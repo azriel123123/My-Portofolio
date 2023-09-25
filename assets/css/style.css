@@ -1,0 +1,705 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  
+  
+  .home {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 8%;
+    padding-left: 8%;
+    background-color: rgb(0, 0, 0);
+    border-bottom: 1px solid red;
+    position: fixed;
+    width: 90%;
+    z-index: 100;
+  }
+  
+  .toggle {
+    display: none;
+  }
+  
+  .logo{
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-left: -35px;
+  }
+  
+  span {
+    color: red;
+  }
+  
+  nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 10px;
+  }
+  
+  nav ul li a {
+    color: white;
+    font-weight: bold;
+    font-size: 16px; 
+    text-transform: capitalize;
+    margin-right: 35px;
+  }
+  
+  nav ul li a:hover {
+    color: red;
+    transition: 0.5s;
+  }
+  
+  
+  
+  .btn:hover {
+    transform: scale(1.2);
+    border: 2px solid red;
+    background-color: transparent;
+  }
+  
+  .image {
+    width: 50%;
+    height: 90%;
+    position: absolute;
+    bottom: 0;
+    right: 30px;
+      transform: rotatey(180deg);
+  }
+  
+  .image img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 23%;
+    transform: translateX(20%);
+  }
+  
+  .content {
+    position: absolute;
+    top: 60%;
+    left: 8%;
+    transform: translatey(-50%);
+  }
+  
+  h4 {
+    color: white;
+    letter-spacing: 2px;
+    font-size: 20px;
+  }
+  
+  h1 {
+    color: white;
+    font-size: 65px;
+    padding: 20px 0 20px;
+  }
+  
+  h3 {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .content a {
+    font-size: 20px;
+    background: red;
+    color: white;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: 2px solid white;
+    transition: .5s;
+  }
+  
+  .content a:hover {
+    background: transparent;
+    border: 2px solid red;
+  }
+  
+  .about {
+    width: 100%;
+    padding: 100px 0;
+    background-color: rgb(0, 0, 0);
+  }
+  
+  .about-me {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .about-me img {
+    height: auto;
+    width: 438px;
+    border-radius: 10px;
+  }
+  
+  .about-text {
+    width: 550px;
+  }
+  
+  .about-text h2 {
+    color: white;
+    font-size: 65px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    border-bottom: 1px solid red;
+  }
+  
+  .about-text h5 {
+    color: white;
+    letter-spacing: 2px;
+    font-size: 30px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+  }
+  
+  .about-text p {
+    color: red;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+    text-align: justify;
+  }
+  
+  .button {
+    background-color: red;
+    color: white;
+    border: 2px solid white;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .5s;
+  }
+  
+  .button:hover {
+    background-color: transparent;
+    border: 2px solid red;
+    cursor: pointer;
+  }
+  
+  .service {
+    background: black;
+    width: 100%;
+    padding: 100px 0;
+  }
+  
+  .title h2 {
+    color: white;
+    font-size: 75px;
+    width: 100%;
+    margin-bottom: 30px auto;
+    text-align: center;
+  }
+  
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+  }
+  
+  .card {
+    height: 365px;
+    width: 270px;
+    padding: 20px 35px;
+    background: cyan;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    border: 1px solid red;
+  }
+  
+  .card i {
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0;
+    color: red;
+  }
+  
+  .card h5 {
+  color: black;
+  font-size: 23px;
+  margin-bottom: 15px;
+  }
+  
+  .pra p {
+    color: black;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 77px;
+    text-align: justify;
+  }
+  
+  .pra p a {
+    background-color: red;
+    color: white;
+    border: 2px solid red;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+  
+  }
+  
+  .pra p a:hover{
+    background-color: transparent;
+    border: 2px solid red;
+    cursor: pointer;
+  }
+  
+  .card {
+    height: 365px;
+    width: 270px;
+    padding: 20px 35px;
+    background: cyan;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    border: 1px solid red;
+  }
+  
+  .card i {
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0;
+    color: red;
+  }
+  
+  .card h6 {
+  color: black;
+  font-size: 23px;
+  margin-bottom: 15px;
+  }
+  
+  .sra p {
+    color: black;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+    text-align: justify;
+  }
+  
+  .sra p a {
+    background-color: red;
+    color: white;
+    border: 2px solid red;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+  }
+  
+  .sra p a:hover{
+    background-color: transparent;
+    border: 2px solid red;
+    cursor: pointer;
+  }
+  
+  .skill {
+    background: black;
+    width: 100%;
+    padding: 100px 0;
+  }
+  
+  .skill-bar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+  }
+  
+  .skill-bar p {
+    text-align: left;
+  }
+  
+  .skill-box {
+    text-align: right;
+    width: 100%;
+    background-color: white;
+  }
+  
+  .html {
+    width: 90%;
+    background-color: red;
+  }
+  
+  .css {
+    width: 80%;
+    background-color: red;
+  }
+  
+  .text2 {
+      color: white;
+      text-shadow: 0 0 10px red;
+      font-weight: bolder;
+    }
+    
+    .bg {
+      transition: all .5s ease;
+      opacity: 0;
+      background-color: rgba(0, 0, 0, 0.75);
+      width: 100%;
+      height: 102%;
+      position: absolute;
+      top: 0%;
+      left: 0%;
+    }
+    
+    .hidden-text {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 100%;
+      width: 0;
+      transition: all .5s ease;
+    }
+    
+    .hidden {
+      position: absolute;
+      white-space: wrap;
+      color: white;
+      font-size: 2em;
+      top: 50%;
+      left: 50%;
+      text-align: center;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: all 0.5s ease;
+    }
+    
+    .portofolio {
+      padding: 100px 0;
+      background-color: black;
+    }
+    
+    .portofolio .text2 {
+      text-align: center;
+    }
+    
+    .portofolio .title {
+      color: crimson;
+      text-shadow: 0 0 10px crimson;
+      margin-bottom: 70px;
+    }
+    
+    .portofolio .list {
+      margin: 30px 0;
+    }
+    
+    .certificate {
+      display: flex;
+      justify-content: center;
+    }
+    
+    .certificate-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .certificate-box {
+      position: relative;
+      width: 500px;
+      height: 300px;
+      margin: 0 50px;
+      overflow: hidden;
+      border-radius: 5%;
+      margin-bottom: 50px;
+      box-shadow: 0 0 10px gray;
+      border-bottom: 5px solid crimson;
+    }
+    
+    .certificate-box img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      transition: ease-in-out all 0.5s;
+    }
+    
+    .certificate-box:hover .bg {
+      opacity: 1;
+    }
+    
+    .certificate-box:hover {
+      border-radius: 5%;
+      box-shadow: 0 0 20px black;
+    }
+    
+    .certificate-box:hover img {
+      transform: scale(1.2);
+    }
+    
+    .certificate-box:hover .hidden-text {
+      width: 100%;
+    }
+    
+    .certificate-box:hover .hidden {
+      opacity: 1;
+    }
+  
+  
+      .contact-me {
+        width: 100%; 
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      
+      .contact-text h2 {
+        color: white;
+        font-size: 65px;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      
+      .contact-box {
+        color: white;
+      }
+      
+      .contact-box::after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+      
+      .contact {
+        width: 25%;
+        padding: 50px;
+        box-sizing: border-box;
+        text-align: center;
+        float: left;
+      }
+      
+      .contact h4 {
+        color: red;
+        padding-bottom: 10px;
+      }
+      
+      .contact p {
+        font-size: 18px;
+      }
+      
+      footer {
+        position: relative;
+        width: 100%;
+        height: 400px;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      footer p:nth-child(1) {
+        font-size: 30px;
+        color: white;
+        margin-bottom: 20px;
+        font-weight: bold;
+      }
+      
+      footer p:nth-child(2) {
+      color: white;
+      font-size: 17px;
+      width: 500px;
+      text-align: center;
+      line-height: 26px;
+      }
+      
+      .sosial {
+        display: flex;
+      }
+      
+      .sosial a {
+        width: 45px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: red;
+        border-radius: 50%;
+        margin: 22px 10px;
+        color: white;
+        border: 2px solid white;
+      }
+      
+      .sosial a:hover {
+        transform: scale(1.3);
+        transition: 0.5s;
+        background: transparent;
+        border: 2px solid red;
+      }
+      
+      .end {
+        position: absolute;
+        color: white;
+        bottom: 65px;
+        font-size: 16px;
+      }
+  
+      
+      
+      @media screen and (max-width:769px) {
+        .home {
+        width: 100%;
+        }
+        .logo {
+          margin-left: -30px;
+        }
+        .content h4 {
+          font-size: 30px;
+        }
+        .content h1 {
+          font-size: 30px;
+        }
+        .content h3 {
+          font-size: 30px;
+        }
+        .image {
+          margin-right: 50px;
+        }
+        nav {
+          width: 84%;
+          position: fixed;
+          
+        }
+        .about {
+          width: 100%;
+        }
+        .about-me img{
+          width: 250px;
+          border-radius: 30px;
+        }
+        .service {
+          width: 100%;
+        }
+        .toggle {
+          display: block;
+        }
+        .active {
+          display: block;
+        }
+        .navbar-items{
+          display: none;
+          text-align: right;
+          margin: 50px;
+          width: 100%;
+        }
+      }
+  
+      @media screen and (max-width:430px){
+        .home {
+        width: 123%;
+        height: 1000px;
+        }
+        .image {
+          right: -130px;
+        }
+        .about {
+          width: 123%;
+          height: 1000px;
+        }
+        .service {
+          width: 123%;
+          height: 1000px;
+        }
+        .skill {
+          width: 123%;
+          height: 1000px;
+        }
+        .portofolio {
+          width: 123%;
+          height: 1000px;
+        }
+        .contact-me {
+          width: 123%;
+          height: 1200px;
+        }
+        
+      }
+  
+      /* Style the dropdown button */
+      .dropbtn {
+        background-color: #3498db00;
+        color: white;
+        padding: 2px;
+        border: none;
+        cursor: pointer;
+        margin-right: 50px;
+      }
+      
+      .dropbtn img {
+        width: 35px;
+      }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    opacity: 1;
+  }
+  
+  /* Show the dropdown menu when the button is clicked */
+  .show {
+    display: block;
+  }
+  
+  @media screen and (max-width:320px) {
+    .home {
+      width: 150%;
+    }
+    
+  }
